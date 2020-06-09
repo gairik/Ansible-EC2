@@ -1,7 +1,7 @@
 ---
-key_name: ansible-2
-region: us-east-1
+key_name: ansible-2 # Change to key pair name
+region: us-east-1 # Change to region
 image: ami-0323c3dd2da7fb37d # Amazon Linux 2 AMI (HVM)
-vpc_id: "vpc-07xxf1xxxxxc3"
-group_id: "sg-01xxxxxxx9e7f4"
-subneta: "subnet-045xxxxxe"
+vpc_id: "vpc-07xxf1xxxxxc3" # change to your VPC
+group_id: "sg-01xxxxxxx9e7f4" # chage to your security group ID
+subneta: "subnet-045xxxxxe" # change to your subnet

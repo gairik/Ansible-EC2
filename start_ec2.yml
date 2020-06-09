@@ -13,7 +13,7 @@
         count: 3
         instance_tags:
           Name: Ansible_client
-          Owner: Gairik
+          Owner: Rick Sanchez
         monitoring: no
         vpc_subnet_id: "{{subneta}}"
         assign_public_ip: yes
