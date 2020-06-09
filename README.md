@@ -15,13 +15,14 @@ aws configure
 
 To use this start_ec2.yml playbook, I am also assuming that the following services pre-exists in the AWS account 
 
-1. key_name - Key pair
-2. vpc_id - VPC
-3. group_id - Security group
-4. subneta - Subnet
+1. Key pair
+2. VPC
+3. Security group
+4. Subnet
 
 To terminate running EC2 instance, you can simply use the play book terminate.yml. The play uses prompt variable, which means after running the playbook, you need to provide the instance id of the running EC2 machines. 
 
+Before running the playbooks make sure you change the **vars.yml** file 
 
 How to run Ansible playbooks
 
