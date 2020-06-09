@@ -1,0 +1,20 @@
+- hosts: localhost
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Create EC2 instance
+      ec2:
+        key_name: "{{ key_name }}"
+        region: "{{ region }}"
+        instance_type: t2.micro
+        image: "{{ image }}"
+        wait: yes
+        wait_timeout: 500
+        count: 3
+        instance_tags:
+          Name: Ansible_client
+          Owner: Gairik
+        monitoring: no
+        vpc_subnet_id: "{{subneta}}"
+        assign_public_ip: yes
+        group_id: "{{group_id}}"
